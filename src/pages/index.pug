@@ -1,6 +1,22 @@
 extends ../components/layout-default/layout-default
+include ../components/header/header
+include ../components/second-section/second-section
+include ../components/delivery/delivery
+include ../components/service/service
+include ../components/ask/ask
+include ../components/push-notifications/push-notifications
+include ../components/business/business
+include ../components/footer/footer
 
 block head
-    - var pageTitle = 'Index Page';
+    - var pageTitle = 'Main page';
 
 block content
+  +header()
+  +second-section()
+  +delivery()
+  +service()
+  +ask()
+  +push-notifications()
+  +business()
+  +footer()

@@ -1,0 +1,31 @@
+mixin header()
+  +b('header').header.pos-relative
+    +e.white-fon
+    +e.blue-fon.jsHeaderBlueFon
+    +e.grey-fon
+    +b.container.pos-relative
+      +b.row
+        +b.nav-menu
+          +e('a')(href='/').logo
+            +e('img')(src='assets/images/logo.png' alt='')
+          +e.menu
+            +e('a')(href='#') Menu
+            +e('a')(href='#') Menu
+            +e('a')(href='#') Menu
+            +e('a')(href='#') Menu
+          +e('button').call.btn.btn-header
+            +e('img')(src='assets/images/phone-receiver.svg' alt='' width='17' height='16')
+            | Request a call
+          +e.phones
+            +e('a')(href='tel:+79852562837') +7 (985) 256-28-37
+            +e('a')(href='tel:+74997000818') +7 (499) 700-08-18
+        +b.header-content.col-md-8
+          +e('h1') Looking for the best way to grow your business and attract new customers?
+          +e('p') Start to deliver orders to customers.
+          +e('p') Make it simple the way how you manage and deliver your incoming orders.
+          +e('p') Control and a perfect timeline of your delivery at one single place.
+          +e('span') It's time to carry products to your customers! We explained the idea in less than 60 seconds
+          +e.btn-block
+            +e('button').video.btn Button to video
+            +e('img')(src='assets/images/share.png' alt='')
+        +b('img')(src='assets/images/header_imeage-left.png' alt='').header-image

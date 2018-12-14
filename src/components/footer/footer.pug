@@ -1,0 +1,17 @@
+mixin footer()
+  +b('footer').footer
+    +b.container
+      +b.row
+        +b.nav-menu
+          +b('a')(href='/').f-logo logo
+          +e.menu.f-menu
+            +e('a')(href='#') Menu
+            +e('a')(href='#') Menu
+            +e('a')(href='#') Menu
+            +e('a')(href='#') Menu
+          +e('button').call.btn.btn-header
+            +e('img')(src='assets/images/phone-receiver.svg' alt='' width='17' height='16')
+            | Request a call
+          +e.phones
+            +e('a')(href='tel:+79852562837') +7 (985) 256-28-37
+            +e('a')(href='tel:+74997000818') +7 (499) 700-08-18

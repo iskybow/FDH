@@ -1,0 +1,31 @@
+mixin push-notifications()
+  +b('section').push-notifications.pos-relative
+    +e.backgroubd
+    +b.container.pos-relative
+      +b.row
+        +b('img')(src='assets/images/push_notifications_fon.png' alt='').push-background-image
+        +b.push-head.col-lg-8.col-12
+          +e('h2') ОРАГНИЗОВАННАЯ СИСТЕМА
+            <br>
+            | СООБЩЕНИЙ ЧЕРЕЗ PUSH-УВЕДОМЛЕНИЯ
+        +b.push-description.col-lg-9.col-12
+          +e('h3') Easy to use and intuitive interface. The ability to calculate the costs and choose
+            | from the delivery methods what is the best for the customer: from bicycle to
+            +e('span') VIP courier!
+        +b.push-items.col-md-12
+          +e.item.col-md-4
+            +e('img')(src='assets/images/push_item.png' alt='')
+            +e('p') Дополнительные возможности: живой диспетчер и т.д.
+              | Organized push-notifications alert system and the premium option of a live dispatcher in 3 languages*
+          +e.item.col-md-4
+            +e('img')(src='assets/images/push_item.png' alt='')
+            +e('p') Дополнительные возможности: живой диспетчер и т.д.
+              | Organized push-notifications alert system and the premium option of a live dispatcher in 3 languages*
+          +e.item.col-md-4
+            +e('img')(src='assets/images/push_item.png' alt='')
+            +e('p') Дополнительные возможности: живой диспетчер и т.д.
+              | Organized push-notifications alert system and the premium option of a live dispatcher in 3 languages*
+        +b.push-button.col-md-12
+          +e('p') The mobile app which opens up more premium features*
+          +b('button').btn button
+          +e('img')(src='assets/images/share.png' alt='')

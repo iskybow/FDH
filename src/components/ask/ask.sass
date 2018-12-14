@@ -1,0 +1,94 @@
+.ask
+  display: block
+
+.ask-head
+  margin: 0 auto 70px
+  font-family: 'Muller', sans-serif
+  font-size: 34px
+  font-weight: 700
+  color: #ef3533
+  text-transform: uppercase
+  text-align: center
+  letter-spacing: 0.4px
+
+.ask-block
+  display: flex
+  align-items: center
+  @media (max-width: 993px)
+    flex-direction: column
+  &__left
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    //width: 55%
+    &__item
+      display: flex
+      align-items: center
+      margin: 20px 0
+      & img
+        min-width: 50px
+        height: fit-content
+        margin-right: 45px
+      & p
+        margin-bottom: 0
+        font-family: 'Muller', sans-serif
+        font-size: 16px
+        font-weight: 400
+        color: #00050b
+        letter-spacing: 0.96px
+  &__right
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    padding: 50px 0 30px 50px
+    background-color: #ffffff
+    box-shadow: 0 16px 40px 0 rgba(0,0,0,.2)
+    & h3
+      margin: 0
+      font-family: 'Muller', sans-serif
+      font-size: 24px
+      font-weight: 700
+      color: #00384d
+      text-transform: uppercase
+      letter-spacing: 0.24px
+    &__text
+      position: relative
+      margin-top: 15px
+      padding-left: 75px
+      @media (max-width: 425px)
+        padding-left: 0
+      &:after
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        display: block
+        width: 67px
+        height: 77px
+        background: url("../images/checkout.png") no-repeat 50% 50%
+        @media (max-width: 425px)
+          display: none
+      &:before
+        content: ''
+        position: absolute
+        bottom: -38px
+        display: block
+        width: 207px
+        height: 17px
+        background: url("../images/five_dot.png") no-repeat 50% 50%
+        z-index: -1
+      & span
+        margin: 0
+        font-family: 'Muller', sans-serif
+        font-size: 65px
+        font-weight: 700
+        color: #ef3533
+        text-transform: uppercase
+        letter-spacing: 0.51px
+      & p
+        margin: 0
+        font-family: 'Muller', sans-serif
+        font-size: 18px
+        font-weight: 700
+        color: #ef3533
+        letter-spacing: 0.24px

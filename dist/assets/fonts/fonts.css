@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 500;
+  src: url(../fonts/MullerMedium.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/MullerRegular_0.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/MullerBold.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 800;
+  src: url(../fonts/MullerExtraBold.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Muller-Italic';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/MullerRegularItalic.otf) format('opentype');
+}
