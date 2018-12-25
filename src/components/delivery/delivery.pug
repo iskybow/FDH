@@ -1,5 +1,5 @@
 mixin delivery()
-  +b('section').delivery
+  +b('section').delivery.tabcontent#two
     +b.container
       +b.row
         +b.delivery-block.col-md-12
@@ -17,4 +17,5 @@ mixin delivery()
         +b.delivery-procent.col-md-12
           +e('img')(src='assets/images/five_dot.png' alt='')
           +e('span') 28%
+            +e('img')(src='assets/images/lightning.png' alt='')
           +e('p') According to the statistics, 28% of customers are ready to order the delivery, if there is an option for it.

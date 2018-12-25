@@ -1,23 +1,30 @@
 mixin service()
-  +b('section').service
+  +b('section').service.tabcontent#first
     +b.container.pos-relative
       +b.row
-        +b('img')(src='assets/images/service_left.png' alt='').service-background
+        //+b('img')(src='assets/images/service_left.png' alt='').service-background
         +b('h2').service-head Already have this service in your business?
         +b('p').service-head2   Connect it to our system, and manage the service in a few clicks.
         +b.service-block.col-md-12
-          +e.text.col-md-6
+          +e.text.col-md-8
             +e('p') Start building a delivery business with us. We offer new opportunities that will bring new customers
               | to you. Accomplish your first delivery service with us today ...!
-            +e('p') Your personal business receipts. Make your business more attractive with special options
-          +b('img')(src='assets/images/service_image.png' alt='').col-md-6
-        +b.service-white.col-md-12
-          +e('p') We offer the opportunity to create an online menu for your place and get a first month free* connection
-            | to our delivery system.
-          +b.dark-block.service-dark-left
-          +b.dark-block.service-dark-bottom
+            +b('p').col-md-8 Your personal business receipts. Make your business more attractive with special options
+        +b.service-red-block.col-12
+          +e.left.col-lg-4
+            +e('p') Easily assign tasks
+            +e('p') Check the status
+            +e('p') Control details
+            +e('p') Analyze all the information in one place
+            +e('p') Update the task on-line
+            +e('p') Track the route
+            +e('p') Simple pay
+            +e('p') Flexible adaptation to other systems
+          +e.right.col-lg-8
+            +b('img')(src='assets/images/service_image.png' alt='')
+            +b.service-white
+              +e('p') We offer the opportunity to create an online menu for your place and get a first month free* connection
+                | to our delivery system.
+              +b.dark-block.service-dark-left
+              +b.dark-block.service-dark-bottom
         +b.service-text.col-md-12 * The service is limited and means the free use within the first 30 days of it's launching.
-        +b.service-btn-block.col-md-12
-          +e('img')(src='assets/images/share.png' alt='').left
-          +e('button').center.btn button
-          +e('img')(src='assets/images/share.png' alt='').right

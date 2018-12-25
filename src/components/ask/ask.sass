@@ -3,27 +3,30 @@
 
 .ask-head
   margin: 0 auto 70px
-  font-family: 'Muller', sans-serif
-  font-size: 34px
-  font-weight: 700
-  color: #ef3533
-  text-transform: uppercase
-  text-align: center
-  letter-spacing: 0.4px
+  & h2
+    font-family: 'Muller', sans-serif
+    font-size: 34px
+    font-weight: 700
+    color: #ef3533
+    text-transform: uppercase
+    text-align: center
+    letter-spacing: 0.4px
 
 .ask-block
   display: flex
   align-items: center
-  @media (max-width: 993px)
-    flex-direction: column
+  @media (max-width: 1200px)
+    flex-wrap: wrap
   &__left
-    display: flex
+    position: relative
+    display: block
     flex-direction: column
     align-items: flex-start
     //width: 55%
     &__item
       display: flex
       align-items: center
+      //width: 300px !important
       margin: 20px 0
       & img
         min-width: 50px
@@ -33,16 +36,37 @@
         margin-bottom: 0
         font-family: 'Muller', sans-serif
         font-size: 16px
-        font-weight: 400
+        font-weight: 700
         color: #00050b
         letter-spacing: 0.96px
+  &__center
+    position: relative
+    z-index: 2
+    @media (max-width: 993px)
+      margin: 50px auto 20px
+    @media (max-width: 769px)
+      display: flex
+      justify-content: center
+      align-items: center
+    &.col-md-4
+      padding: 0
+    & img
+      @media (max-width: 769px)
+        width: 300px
+        height: auto
+
   &__right
+    position: relative
+    top: -45px
     display: flex
     flex-direction: column
     align-items: flex-start
     padding: 50px 0 30px 50px
     background-color: #ffffff
     box-shadow: 0 16px 40px 0 rgba(0,0,0,.2)
+    @media (max-width: 1200px)
+      top: 0
+      margin: 20px auto 0
     & h3
       margin: 0
       font-family: 'Muller', sans-serif
@@ -92,3 +116,63 @@
         font-weight: 700
         color: #ef3533
         letter-spacing: 0.24px
+
+.ask-for-slider
+  position: absolute
+  top: 15px
+  left: 35px
+  width: 367px
+  height: 195px
+  @media (max-width: 769px)
+    top: 11px
+    left: auto
+    width: 270px
+    height: 145px
+  &__image
+    //width: 367px !important
+    //height: 195px !important
+    & img
+      width: 367px
+      height: 195px
+      object-fit: contain
+      @media (max-width: 769px)
+        width: 270px
+        height: 145px
+
+.ask-prev
+  position: absolute
+  bottom: -40px
+  right: 100px
+  display: block
+  background: none
+  border: none
+  cursor: pointer
+  outline: none
+  @media (max-width: 993px)
+    right: 55%
+    bottom: -40px
+  &:focus
+    outline: none
+  & img
+    width: 30px
+    height: auto
+    transform: rotate(180deg)
+
+
+.ask-next
+  position: absolute
+  bottom: -50px
+  right: 40px
+  display: block
+  background: none
+  border: none
+  cursor: pointer
+  outline: none
+  @media (max-width: 993px)
+    right: 45%
+    bottom: -40px
+  &:focus
+    outline: none
+  & img
+    width: 30px
+    height: auto

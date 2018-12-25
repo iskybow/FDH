@@ -1,0 +1,7 @@
+mixin tabs()
+  +b('section').tabs
+    +b.container
+      +b.row
+        +b('button')(onclick="openCity(event, 'first')").tablinks#defaultOpen I have not had delivery yet
+        +b('span') /
+        +b('button')(onclick="openCity(event, 'two')").tablinks I already have a delivery

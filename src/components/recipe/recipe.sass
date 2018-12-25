@@ -1,0 +1,61 @@
+.recipe
+  display: block
+  &__head
+    margin: 0 auto 60px
+    font-family: 'Muller', sans-serif
+    font-size: 24px
+    font-weight: 800
+    color: #004058
+    text-transform: uppercase
+    text-align: center
+
+.recipe-block
+  position: relative
+  display: flex
+  align-items: center
+  margin: 0 auto 110px
+  @media (max-width: 993px)
+    flex-direction: column
+    margin-bottom: 50px
+  & span
+    margin: 0 40px
+    font-family: 'Muller', sans-serif
+    font-size: 70px
+    font-weight: 800
+    color: #004058
+    @media (max-width: 993px)
+      margin: 10px
+  &__text
+    font-family: 'Muller', sans-serif
+    font-size: 23px
+    font-weight: 800
+    color: #ef3533
+    @media (max-width: 993px)
+      text-align: center
+  &__bottom-text
+    position: absolute
+    bottom: -35px
+    left: 105px
+    margin: 0
+    font-family: 'Muller', sans-serif
+    font-size: 23px
+    font-weight: 800
+    color: #000000
+    @media (max-width: 993px)
+      display: none
+
+.recipe-btn-block
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 auto
+  &__right
+    position: absolute
+    top: -90px
+    right: 40px
+    @media (max-width: 993px)
+      display: none
+  &__center
+    position: relative
+    top: 25px

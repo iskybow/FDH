@@ -5,19 +5,29 @@ mixin ask()
         +b.ask-head.col-md-12
           +e('h2') ASK FOR FREE CONSULTATION NOW!
         +b.ask-block.col-md-12
-          +e.left.col-xl-7
+          +e.left.col-xl-4.col-lg-6.jsAskNav
             +e.left__item
-              +e('img')(src='assets/images/ask_item_1.png' alt='')
               +e('p') Get started with your product’s delivery today! You will be surprised at the price and number
                 | of opportunities!
             +e.left__item
-              +e('img')(src='assets/images/ask_item_2.png' alt='')
               +e('p') The mobile app's premium features * (The mobile app which opens up more premium features *)
             +e.left__item
-              +e('img')(src='assets/images/ask_item_3.png' alt='')
               +e('p') Control and manage your costs, delivery time and the route, and, also, use handy payment system.
-          +e.right.col-xl-5
+          +e.center.col-xl-4.col-md-8
+            +e('img')(src='assets/images/laptop_slider.png' alt='')
+            +b.ask-for-slider.jsAskFor
+              +e.image
+                +e('img')(src='assets/images/people_bicycle.png' alt='')
+              +e.image
+                +e('img')(src='assets/images/service_image.png' alt='')
+              +e.image
+                +e('img')(src='assets/images/delivery_image.png' alt='')
+          +e.right.col-lg-5.col-md-8
             +e('h3') OFFER всего за
             +e.right__text
               +e('span') $99,99
               +e('p') первый месяц бесплатно!*
+        +b.service-btn-block.col-md-12
+          +e('img')(src='assets/images/share.png' alt='').left
+          +e('button').center.btn button
+          +e('img')(src='assets/images/share.png' alt='').right

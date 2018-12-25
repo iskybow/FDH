@@ -1,10 +1,13 @@
 extends ../components/layout-default/layout-default
 include ../components/header/header
 include ../components/second-section/second-section
+include ../components/tabs/tabs
 include ../components/delivery/delivery
 include ../components/service/service
 include ../components/ask/ask
 include ../components/push-notifications/push-notifications
+include ../components/recipe/recipe
+include ../components/price/price
 include ../components/business/business
 include ../components/footer/footer
 
@@ -14,9 +17,12 @@ block head
 block content
   +header()
   +second-section()
+  +tabs()
   +delivery()
   +service()
   +ask()
   +push-notifications()
+  +recipe()
+  +price()
   +business()
   +footer()

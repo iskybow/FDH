@@ -27,8 +27,22 @@
 }
 
 @font-face {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 900;
+  src: url(../fonts/MullerBlack.otf) format('opentype');
+}
+
+@font-face {
   font-family: 'Muller-Italic';
   font-style: normal;
   font-weight: 400;
   src: url(../fonts/MullerRegularItalic.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Muller-Italic';
+  font-style: normal;
+  font-weight: 500;
+  src: url(../fonts/MullerMediumItalic.otf) format('opentype');
 }

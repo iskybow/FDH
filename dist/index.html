@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Main page</title>
     <!--link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous")-->
+    <link href="assets/libs/slick.css" rel="stylesheet">
+    <link href="assets/libs/slick-theme.css" rel="stylesheet">
     <link href="assets/libs/bootstrap.css" rel="stylesheet">
     <link href="assets/fonts/fonts.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
@@ -52,6 +54,14 @@
         <div class="row">
           <div class="second-block">
             <div class="second-block__head col-md-10">
+              <div class="second-block__head__blue1">
+              </div>
+              <div class="second-block__head__blue2">
+              </div>
+              <div class="second-block__head__red1">
+              </div>
+              <div class="second-block__head__red2">
+              </div>
               <p>
                 We chose a simple service - delivery - and provided you with an opportunity to start your owndelivery services business. It is easy to manage and optimize costs while offering the best balance of
                 quality vs prices.
@@ -78,7 +88,17 @@
         </div>
       </div>
     </section>
-    <section class="delivery">
+    <section class="tabs">
+      <div class="container">
+        <div class="row">
+          <button class="tablinks" onclick="openCity(event, 'first')" id="defaultOpen">I have not had delivery yet
+          </button><span>/</span>
+          <button class="tablinks" onclick="openCity(event, 'two')">I already have a delivery
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="delivery tabcontent" id="two">
       <div class="container">
         <div class="row">
           <div class="delivery-block col-md-12"><img class="delivery-block__left" src="assets/images/delivery_image.png" alt="" role="presentation"/>
@@ -100,43 +120,62 @@
               </button>
             </div>
           </div>
-          <div class="delivery-procent col-md-12"><img src="assets/images/five_dot.png" alt="" role="presentation"/><span>28%</span>
+          <div class="delivery-procent col-md-12"><img src="assets/images/five_dot.png" alt="" role="presentation"/><span>28%<img src="assets/images/lightning.png" alt="" role="presentation"/></span>
             <p>According to the statistics, 28% of customers are ready to order the delivery, if there is an option for it.
             </p>
           </div>
         </div>
       </div>
     </section>
-    <section class="service">
+    <section class="service tabcontent" id="first">
       <div class="container pos-relative">
-        <div class="row"><img class="service-background" src="assets/images/service_left.png" alt="" role="presentation"/>
+        <div class="row">
+          <!--+b('img')(src='assets/images/service_left.png' alt='').service-background-->
           <h2 class="service-head">Already have this service in your business?
           </h2>
           <p class="service-head2">  Connect it to our system, and manage the service in a few clicks.
           </p>
           <div class="service-block col-md-12">
-            <div class="service-block__text col-md-6">
+            <div class="service-block__text col-md-8">
               <p>
                 Start building a delivery business with us. We offer new opportunities that will bring new customersto you. Accomplish your first delivery service with us today ...!
               </p>
-              <p>Your personal business receipts. Make your business more attractive with special options
+              <p class="col-md-8">Your personal business receipts. Make your business more attractive with special options
               </p>
-            </div><img class="col-md-6" src="assets/images/service_image.png" alt="" role="presentation"/>
-          </div>
-          <div class="service-white col-md-12">
-            <p>
-              We offer the opportunity to create an online menu for your place and get a first month free* connectionto our delivery system.
-            </p>
-            <div class="dark-block service-dark-left">
             </div>
-            <div class="dark-block service-dark-bottom">
+          </div>
+          <div class="service-red-block col-12">
+            <div class="service-red-block__left col-lg-4">
+              <p>Easily assign tasks
+              </p>
+              <p>Check the status
+              </p>
+              <p>Control details
+              </p>
+              <p>Analyze all the information in one place
+              </p>
+              <p>Update the task on-line
+              </p>
+              <p>Track the route
+              </p>
+              <p>Simple pay
+              </p>
+              <p>Flexible adaptation to other systems
+              </p>
+            </div>
+            <div class="service-red-block__right col-lg-8"><img src="assets/images/service_image.png" alt="" role="presentation"/>
+              <div class="service-white">
+                <p>
+                  We offer the opportunity to create an online menu for your place and get a first month free* connectionto our delivery system.
+                </p>
+                <div class="dark-block service-dark-left">
+                </div>
+                <div class="dark-block service-dark-bottom">
+                </div>
+              </div>
             </div>
           </div>
           <div class="service-text col-md-12">* The service is limited and means the free use within the first 30 days of it's launching.
-          </div>
-          <div class="service-btn-block col-md-12"><img class="service-btn-block__left" src="assets/images/share.png" alt="" role="presentation"/>
-            <button class="service-btn-block__center btn">button
-            </button><img class="service-btn-block__right" src="assets/images/share.png" alt="" role="presentation"/>
           </div>
         </div>
       </div>
@@ -149,22 +188,32 @@
             </h2>
           </div>
           <div class="ask-block col-md-12">
-            <div class="ask-block__left col-xl-7">
-              <div class="ask-block__left__item"><img src="assets/images/ask_item_1.png" alt="" role="presentation"/>
+            <div class="ask-block__left col-xl-4 col-lg-6 jsAskNav">
+              <div class="ask-block__left__item">
                 <p>
                   Get started with your product’s delivery today! You will be surprised at the price and numberof opportunities!
                 </p>
               </div>
-              <div class="ask-block__left__item"><img src="assets/images/ask_item_2.png" alt="" role="presentation"/>
+              <div class="ask-block__left__item">
                 <p>The mobile app's premium features * (The mobile app which opens up more premium features *)
                 </p>
               </div>
-              <div class="ask-block__left__item"><img src="assets/images/ask_item_3.png" alt="" role="presentation"/>
+              <div class="ask-block__left__item">
                 <p>Control and manage your costs, delivery time and the route, and, also, use handy payment system.
                 </p>
               </div>
             </div>
-            <div class="ask-block__right col-xl-5">
+            <div class="ask-block__center col-xl-4 col-md-8"><img src="assets/images/laptop_slider.png" alt="" role="presentation"/>
+              <div class="ask-for-slider jsAskFor">
+                <div class="ask-for-slider__image"><img src="assets/images/people_bicycle.png" alt="" role="presentation"/>
+                </div>
+                <div class="ask-for-slider__image"><img src="assets/images/service_image.png" alt="" role="presentation"/>
+                </div>
+                <div class="ask-for-slider__image"><img src="assets/images/delivery_image.png" alt="" role="presentation"/>
+                </div>
+              </div>
+            </div>
+            <div class="ask-block__right col-lg-5 col-md-8">
               <h3>OFFER всего за
               </h3>
               <div class="ask-block__right__text"><span>$99,99</span>
@@ -172,6 +221,10 @@
                 </p>
               </div>
             </div>
+          </div>
+          <div class="service-btn-block col-md-12"><img class="service-btn-block__left" src="assets/images/share.png" alt="" role="presentation"/>
+            <button class="service-btn-block__center btn">button
+            </button><img class="service-btn-block__right" src="assets/images/share.png" alt="" role="presentation"/>
           </div>
         </div>
       </div>
@@ -213,6 +266,94 @@
             </p>
             <button class="btn">button
             </button><img src="assets/images/share.png" alt="" role="presentation"/>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="recipe">
+      <div class="container">
+        <div class="row">
+          <h2 class="recipe__head col-lg-7">The ideal recipe of successful cafe / Essential Ingredients of a Successful Cafe!
+          </h2>
+          <div class="recipe-block col-lg-9 col-md-6"><img src="assets/images/recipe_1.png" alt="" role="presentation"/><span>+</span><img src="assets/images/recipe_2.png" alt="" role="presentation"/><span>=</span>
+            <p class="recipe-block__text">Happy customer / Satisfied customer
+            </p>
+            <p class="recipe-block__bottom-text">Cafe + Delivery
+            </p>
+          </div>
+          <div class="recipe-block col-lg-12 col-md-6"><img src="assets/images/recipe_1.png" alt="" role="presentation"/><span>+</span><img src="assets/images/recipe_2.png" alt="" role="presentation"/><span>+</span><img src="assets/images/recipe_3.png" alt="" role="presentation"/><span>=</span>
+            <p class="recipe-block__text">Time saving and income growth + Satisfied customer
+            </p>
+            <p class="recipe-block__bottom-text">Cafe + Delivery + Personal dispatcher
+            </p>
+          </div>
+          <div class="recipe-btn-block col-md-3">
+            <button class="recipe-btn-block__center btn">button
+            </button><img class="recipe-btn-block__right" src="assets/images/share.png" alt="" role="presentation"/>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="price">
+      <div class="container">
+        <div class="row">
+          <div class="price__head col-12">
+            <h2>New in retail business? Looking for profitable options?
+            </h2>
+          </div>
+          <div class="price__comment col-12">
+            <p>A new way to launch the delivery service in a few clicks with World trusted companies!
+            </p>
+            <p>We collaborate with world leaders on delivery. The order management system is already integrated into
+            </p>
+            <p>the platform. Here are the delivery price list examples to New York and neighboring states:
+            </p>
+          </div>
+          <div class="price-block col-12">
+            <div class="price-block__item col-lg-4 col-md-5">
+              <h3 class="price-block__item__head">New York
+              </h3>
+              <p class="price-block__item__text">5 mile ~ $11
+              </p>
+              <p class="price-block__item__text">10 mile ~ $19
+              </p><span class="price-block__item__num">01</span>
+            </div>
+            <div class="price-block__item col-lg-4 col-md-5">
+              <h3 class="price-block__item__head">Philadelphia
+              </h3>
+              <p class="price-block__item__text">5 mile ~ up to $7,<br>  but the minimal rate $8
+              </p>
+              <p class="price-block__item__text">10 mile ~ $11
+              </p><span class="price-block__item__num">02</span>
+            </div>
+            <div class="price-block__item col-lg-4 col-md-5">
+              <h3 class="price-block__item__head">New Jersey
+              </h3>
+              <p class="price-block__item__text">5 mile ~ up to $7,<br> but the minimal rate $8
+              </p>
+              <p class="price-block__item__text">10 mile ~ $11
+              </p><span class="price-block__item__num">03</span>
+            </div>
+          </div>
+          <div class="price__bottom-head col-12">
+            <h2>Drive your own delivery but interested in implement new technologies?
+            </h2>
+          </div>
+          <div class="price__bottom-comment col-md-10">
+            <p>- We offer an opportunity to manage your own delivery service from the single portal by using the other tools of your business
+            </p>
+          </div>
+          <div class="price__bottom-comment col-md-10">
+            <p>- Easy to use tool which can be personalised!
+            </p>
+          </div>
+          <div class="price__bottom-comment col-md-10">
+            <p>- Retail ecosystem. Mobile business. Mobile menu. Be close to your customer approximative  70%* of its time
+            </p>
+          </div>
+          <div class="price__bottom-text col-12">
+            <p>* the period of time that the ordinary (regular) person spends on the smartphone during the day
+            </p>
           </div>
         </div>
       </div>
@@ -267,6 +408,7 @@
       </div>
     </footer>
     <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>

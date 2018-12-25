@@ -22,11 +22,48 @@
   & > .col-md-10
     flex: none
   &__head
+    position: relative
     width: 80%
     font-family: 'Muller', sans-serif
     font-weight: 500
     font-size: 18px
     color: #243957
+    &__blue1
+      position: absolute
+      top: -30px
+      left: -15px
+      display: block
+      width: 40px
+      height: 3px
+      background-color: #4997e8
+      z-index: 2
+    &__red1
+      position: absolute
+      top: -30px
+      left: -15px
+      display: block
+      width: 3px
+      height: 40px
+      background-color: #ff514e
+      z-index: 1
+    &__blue2
+      position: absolute
+      bottom: 10px
+      right: 15px
+      display: block
+      width: 40px
+      height: 3px
+      background-color: #4997e8
+      z-index: 2
+    &__red2
+      position: absolute
+      bottom: 10px
+      right: 15px
+      display: block
+      width: 3px
+      height: 40px
+      background-color: #ff514e
+      z-index: 1
   &__dots
     position: relative
     right: -130px
